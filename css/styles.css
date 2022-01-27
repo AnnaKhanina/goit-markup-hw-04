@@ -176,6 +176,10 @@ button {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--background-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -267,6 +271,7 @@ button {
 .team-item {
   width: ((100% - 90px) / 4);
   margin-right: 30px;
+
 }
 
 .team-item:nth-child(4n) {
@@ -294,9 +299,31 @@ button {
   letter-spacing: 0.03em;
 }
 
-.team-post-title {
+.team-item-content {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
+  background-color: var(--accent-filters-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-social-list {
+  display: flex;
+  justify-content: center;
+  }
+
+  .team-social-item + .team-social-item {
+    margin-left: 10px;
+  }
+
+.team-social-link {
+  width: 44px;
+  height: 44px;
+  /*background-color: var(--accent-filters-color);*/
+  background-color: tomato;
+  border-radius: 50%;
+  display: block;
 }
 
 /*------portfolio------*/
