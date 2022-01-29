@@ -128,7 +128,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-  
+
 .header-item + .header-item {
   margin-left: 50px;
 }
@@ -233,23 +233,25 @@ button {
   margin-right: 30px;
 }
 
-.features-item::before {
-  display: block;
-  content: "";
-  margin-bottom: 30px;
+/*--------features-icon----------*/
+
+.features-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
   height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  margin-bottom: 30px;
   background-color: var(--background-color-secondary);
   border-radius: 4px;
 }
 
-.icon-antenna::before {
-  background-image: url("./images/icons.svg#icon-antenna");
+.features-icon-bg {
+  width: 70px;
+  height: 70px;
 }
 
-.features-title {  
+.features-title {
   margin-bottom: 10px;
   color: var(--header-text-color);
   font-weight: bold;
@@ -336,19 +338,21 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
+/*---------team-socials------------*/
+
 .team-socials-list {
   display: flex;
   justify-content: center;
 }
 
 .team-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   background-color: var(--accent-filters-color);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: var(--socials-icon-color);
 }
 
@@ -367,7 +371,7 @@ button {
 .team-socials-item + .team-socials-item {
   margin-left: 10px;
 }
- 
+
 /*Запасной вариант
 .team-socials-icon {
   fill: var(--socials-icon-color);
@@ -389,7 +393,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  }
+}
 
 .clients-item {
   width: 170px;
@@ -403,24 +407,24 @@ button {
 .clients-link {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   width: 100%;
-  height: 100%;   
+  height: 100%;
   color: var(--socials-icon-color);
   box-sizing: border-box;
   border: 1px solid var(--socials-icon-color);
   border-radius: 4px;
-  }
+}
 
 .clients-icon {
   width: 106px;
-  height: 60px;    
+  height: 60px;
   fill: currentColor;
 }
 
 .clients-link:hover,
-.clients-link:focus  {
-  border-color: var(--accent-color) ;
+.clients-link:focus {
+  border-color: var(--accent-color);
   fill: var(--accent-color);
 }
 
@@ -584,7 +588,6 @@ button {
 }
 
 .footer-socials-title {
-  
   margin-bottom: 20px;
   color: var(--accent-filters-color);
   font-weight: bold;
@@ -624,4 +627,3 @@ button {
 .footer-socials-link:focus {
   background-color: var(--accent-color);
 }
-
