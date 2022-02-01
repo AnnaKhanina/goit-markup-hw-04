@@ -149,8 +149,6 @@ button {
 .header-link-tel {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--link-list-color);
 }
 
